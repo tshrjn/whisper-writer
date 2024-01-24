@@ -1,8 +1,8 @@
-# whisper-keyboard
+# whisper-write
 
 Video demo: https://www.youtube.com/watch?v=VnFtVR72jM4&feature=youtu.be
 
-Smulate keyboard typing with voice commands on your computer. Use the power of OpenAI's Whisper.
+Simulate keyboard typing with voice commands on your computer. Use the power of OpenAI's Whisper.
 
 Start the wkey listener. Keep a button pressed (by default: right ctrl) and speak. Your voice will be recoded locally. When the button is released, your command will be transcribed via Whisper and the text will be streamed to your keyboard.
 
@@ -15,13 +15,13 @@ You will incur costs for Whisper API. Currently, it costs $0.36 for 1 hour of tr
 Install the package.
 
 ```shell
-pip install wkey
+pip install -e .
 ```
 
 You will need to set two environment variables:
 
 - OPENAI_API_KEY: your personal OpenAI API key. You can get it by signing up here: https://platform.openai.com/
-- WKEY: the keyboard key you want to use to start recording. By default, it is set to right ctrl. You can use any key. Note that Mac and Windows might have different key codes. You can run `fkey` to find the code of the key you want to use.
+- WKEY: the keyboard key you want to use to start recording. By default, it is set to right ctrl. You can use any key. Note that Mac and Windows might have different key codes. You can run `fkey` (post installing the repo) to find the code of the key you want to use.
 
 You can set the environment variables in your shell:
 
