@@ -7,8 +7,9 @@ Simulate keyboard typing with voice commands on your computer. Use the power of 
 Start the wkey listener. Keep a button pressed (by default: right ctrl) and speak. Your voice will be recoded locally. When the button is released, your command will be transcribed via Whisper and the text will be streamed to your keyboard.
 
 You can use your voice to write anywhere. 
+Now with support for whsiper.cpp to locally transcribe your voice.
 
-You will incur costs for Whisper API. Currently, it costs $0.36 for 1 hour of transcription.
+If you use Whisper API, you will incur costs. Currently, it costs $0.36 for 1 hour of transcription.
 
 ## Setup
 
@@ -61,3 +62,10 @@ Haven't tested it on Windows yet. If you do, please let me know how it goes.
 ## Security risks
 
 This script creates a recording with your microphone and sends the audio to the Whisper API. The Whisper API response will be automatically streamed to your keyboard and executed there. This might entail security risks. Use at your own risk. 
+
+## Inspiration & Acknowledgements
+
+- This [tweet](https://twitter.com/jxnlco/status/1749883377392529796) from [Jason Liu](https://twitter.com/jxnlco)
+- Prior [repo](https://github.com/vlad-ds/whisper-keyboard)
+- [ggerganov/whisper.cpp](https://github.com/ggerganov/whisper.cpp)
+- [Whispercpp](https://github.com/aarnphm/whispercpp?tab=readme-ov-file#api)
